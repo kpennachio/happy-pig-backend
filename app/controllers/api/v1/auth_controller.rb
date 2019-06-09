@@ -12,7 +12,6 @@ class Api::V1::AuthController < ApplicationController
 
   def auto_login
     user = curr_user
-
     if user
       render json: user
     else
