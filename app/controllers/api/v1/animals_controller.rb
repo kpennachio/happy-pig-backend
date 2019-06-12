@@ -31,7 +31,7 @@ class Api::V1::AnimalsController < ApplicationController
   private
 
   def animal_params
-    params.permit(:user_id, :name, :type, :hunger, :hygiene, :active, :energy, :happy)
+    params.permit(:user_id, :name, :species, :hunger, :hygiene, :active, :energy, :happy)
   end
 
   def find_animal
